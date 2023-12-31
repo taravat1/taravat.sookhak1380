@@ -1,0 +1,9 @@
+def build_pyramid(data):
+    num_rows = len(data)
+    for i in range(num_rows):
+        for j in range(i):
+            print(data[num_rows - i - 1 - j], end="")
+        print()
+
+data = [1, 2, 3, 4, 5]
+build_pyramid(data)
